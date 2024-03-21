@@ -42,3 +42,13 @@ result 값이 처음에 없어 문제가 발생한 것을 확인
 
 ```
 
+## 2.
+<b>상황</b>  
+함수 컴포넌트 -> 클래스 컴포넌트로 변경하는 과정 중 'Box.js'를 'BoxClass.js'로 표현할 때 헤맴  
+line6~25를 render() 밖에 뒀었는데 syntax error 발생  
+<br>
+<b>해결 방법</b>  
+render() 함수 안에 넣었더니 해결  
+<br/>
+<b>관련 코드</b><br>
+![code](https://github.com/sinheyy/rock-paper-scissors/assets/163747140/0b5c407f-0db9-45bf-a232-bdb2c8d1a27d)
