@@ -1,3 +1,5 @@
+# 내가 겪은 GIT 에러들 정리
+
 ## 1
 <b>발생 상황</b>  
 ![image](https://github.com/sinheyy/TIL/assets/163747140/d1ca1fe2-eb64-4a7d-bfd9-ec9dea06af3b)  
