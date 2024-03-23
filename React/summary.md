@@ -29,3 +29,23 @@ Object.keys()
 
 $ 사용 시 +의 역할
 https://peamexx.tistory.com/197 참고
+
+### display: flex
+```js
+.container{
+    display: flex;
+    justify-content: center;/*가로정렬*/
+    align-items: center;/*세로정렬*/
+}
+```
+- display: flex : 아이템들을 flexible하게 조절하기 좋음
+- 같은 영역에 있는 아이템들을 세로가 아닌 가로 정렬로 바꿔버림
+- flex-direction: column; 추가하면 원상복귀 가능
+
+
+### 조건부 렌더링
+```js
+{/*<div>{weather && weather.name}</div>*/}
+<div>{weather?.name}</div>
+```
+둘 다 같은 역할을 함
