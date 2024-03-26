@@ -49,3 +49,10 @@ https://peamexx.tistory.com/197 참고
 <div>{weather?.name}</div>
 ```
 둘 다 같은 역할을 함
+
+
+### 단방향 소통
+부모가 모든 함수와 state를 가지고 있으면 자식에게 넘길 수 있음  
+weather-app에서  
+App이 WeatherInfo와 WeatherButton에게 필요한 정보를 모두 가지고 있고 필요한 정보는 자식들에게 넘겨줌  
+자식들은 App이 준 걸로만 작업을 함 -> App이 나중에 그 정보를 받아다가 다른 데에도 넘겨줄 수 있게 됨  
