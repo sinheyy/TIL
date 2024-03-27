@@ -56,3 +56,28 @@ https://peamexx.tistory.com/197 참고
 weather-app에서  
 App이 WeatherInfo와 WeatherButton에게 필요한 정보를 모두 가지고 있고 필요한 정보는 자식들에게 넘겨줌  
 자식들은 App이 준 걸로만 작업을 함 -> App이 나중에 그 정보를 받아다가 다른 데에도 넘겨줄 수 있게 됨  
+
+
+### url 디자인 - restfult routes  
+/subjects/:id  
+':' 파라미터라는 뜻  
+id는 가변적인 값  
+
+### HTTP verbs
+get : 데이터 가져올 때
+post : 새로운 게시물을 생성할 때
+put : 기존 데이터를 수정할 때
+delete : 데이터 삭제
+
+### navigate
+```js
+    const goProductPage = () => {
+        navigate("/products?q=pants");  // query(pants인 값만 보여줘) 추가
+    }
+```
+? 쿼리 뒤에 있는 값은 url 경로에 영향을 미치지 않음  
+
+
+### redirect
+예를 들어, 로그인 한 사람만 페이지를 접근하도록 하기 위해 계정 관련 페이지를 보호하고 미로그인일 때는 다른 페이지로 redirect 시킴  
+Navigate 컴포넌트가 redirect를 도와줌(useNavigate랑 다름)  
