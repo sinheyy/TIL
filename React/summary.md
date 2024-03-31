@@ -81,3 +81,21 @@ delete : 데이터 삭제
 ### redirect
 예를 들어, 로그인 한 사람만 페이지를 접근하도록 하기 위해 계정 관련 페이지를 보호하고 미로그인일 때는 다른 페이지로 redirect 시킴  
 Navigate 컴포넌트가 redirect를 도와줌(useNavigate랑 다름)  
+
+
+### react bootstrap
+<Form>을 이용할 때, Button type="submit"일 경우에 버튼을 누르면 화면이 계속 refresh 되는데 onSubmit 함수를 써주고 event.preventDefault()를 쓰면 화면이 계속 refresh 되는 것을 막을 수 있다  
+
+### redux
+리액트가 쓸 수 있는 라이브러리 중 하나로 state 관리를 편하게 할 수 있게 해줌  
+기존 리액트의 문제 해결(단방향 소통)  
+redux는 store로 state를 저장해둠  
+component가 action을 던지면 reducer가 catch하고 store의 값을 바꿈  
+store는 state를 다 가지고 있는 object로 reducer가 store의 값을 바꿀 수 있음  
+store의 값이 바뀌면 자동으로 component가 바뀌면서 re-render  
+이 때 필요한 리액트 훅  
+useDispatch : 액션을 던지는 훅  
+useSelector : store에 있는 값을 가져다 쓸 때 사용  
+dispatch에 action 넣을 때는 type과 payload(선택사항)이 필요함  
+type은 액션의 이름을 뜻하고 payload는 일종의 함수로 치면 매개변수  
+reducer는 항상 return 해주기  
