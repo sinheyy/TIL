@@ -14,3 +14,8 @@ https://d2.naver.com/helloworld/8540176
 기존 pc 웹 페이지에서 보이는 메뉴바를 모바일에서는 햄버거 메뉴로 변경하기  
 https://velog.io/@yudidip/%EB%B0%98%EC%9D%91%ED%98%95-%ED%97%A4%EB%8D%94-%EB%A7%8C%EB%93%A4%EA%B8%B0React
 처음 해보는 일이었는데 위의 링크를 통해서 적용
+
+## 5. react bootstrap css 수정
+https://think0wise.tistory.com/24
+custom 할 방법을 도움 받음
+
