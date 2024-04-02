@@ -19,3 +19,13 @@ https://velog.io/@yudidip/%EB%B0%98%EC%9D%91%ED%98%95-%ED%97%A4%EB%8D%94-%EB%A7%
 https://think0wise.tistory.com/24
 custom 할 방법을 도움 받음
 
+## 6. redux, redux-thunk 사용
+Navbar 클릭시 field별로 분류된 product만 보여줘야 하는데 오류로 인해 좀 헤맸다  
+차분히 error 메세지를 확인하니 ProductAll.js에서 map 오류가 나서 문제인 것으로 보여  
+```js
+{productList?.map((menu) => (
+```
+?를 붙여 수정  
+그래도 Navbar 클릭시 product가 안 나와서 console.log를 찍었는데 fieldProducts는 값이 잘 나오고 있었음  
+해결방법은 ! reducer에서 payload 값을 넣을 때, fieldProducts로 넣어야 하는데 data로 넣고 있었다  
+redux 사용법을 익히자  
