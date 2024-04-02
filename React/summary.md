@@ -99,3 +99,14 @@ useSelector : store에 있는 값을 가져다 쓸 때 사용
 dispatch에 action 넣을 때는 type과 payload(선택사항)이 필요함  
 type은 액션의 이름을 뜻하고 payload는 일종의 함수로 치면 매개변수  
 reducer는 항상 return 해주기  
+
+### redux middleware
+redux 단점  
+- 동기적으로 처리, 코드가 순차적으로 진행  
+- 비동기 작업은 진행할 수 없음(ex. api 요청)  
+
+=> 그래서 나온 것이 리덕스 미들웨어  
+미들웨어에서 만드는 함수에서 비동기 처리해줌  
+잠시 action을 홀딩하고 있다가 받으면 dispatch로 던져준다
+redux middleware 라이브러리로 redux-saga, redux-thunk가 있는데
+redux-thunk가 적용이 쉽고 작은 서비스에 더 적합해서 thunk로 진행  
