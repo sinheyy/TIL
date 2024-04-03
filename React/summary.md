@@ -110,3 +110,21 @@ redux 단점
 잠시 action을 홀딩하고 있다가 받으면 dispatch로 던져준다
 redux middleware 라이브러리로 redux-saga, redux-thunk가 있는데
 redux-thunk가 적용이 쉽고 작은 서비스에 더 적합해서 thunk로 진행  
+
+### 최신 redux
+configureStore  
+-> combineReducer, thunk, applyMiddleware, composeWithDevTools가 다 자동으로 세팅되어 있음  
+
+createAsyncThunk : 넘겨준 action type에 대해 promise lifecycle action을 만들어줌  
+lifecycle action 종류
+- pending : async 시작, 아직 결과 받기 전
+- fulfilled : 성공 success
+- rejected : error 실패한 상태
+
+```js
+const getProducts = createAsyncThunk('액션이름', ()=>{콜백함수})
+```
+이렇게 써주기
+
+reducers: 에는 바로 바로 값이 업데이트할 거 만들기(동기적으로 바꿀 때)  
+extraReducers: 에는 dispatch나 바로 호출하지 않고 thunk나 외부 라이브러리에 의해 호출되는 것들 들어감(비동기 케이스들)
