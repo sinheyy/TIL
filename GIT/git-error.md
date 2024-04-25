@@ -25,3 +25,17 @@ Pull 하고 기다리는데 insert가 뜨는데 입력하려고 해도 키보드
 <b>해결 방법</b>  
 https://velog.io/@ssmin0606/%EA%B0%9C%EB%B0%9C%ED%88%B4-Please-enter-a-commit-message-to-explain-why-this-merge-is-necessary-especially-if-it-merges-an-updated-upstream-into-a-topic-branch-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0-git-bash 참고  
 Esc 누르고 :wq 치고 엔터
+
+## 4
+<b>발생 상황</b>  
+![image](https://github.com/sinheyy/TIL/assets/163747140/4ef467e6-8944-4c31-9193-56a582a49c6f)
+
+git checkout 시 에러 발생
+
+<b>해결 방법</b>  
+[https://velog.io/@ssmin0606/%EA%B0%9C%EB%B0%9C%ED%88%B4-Please-enter-a-commit-message-to-explain-why-this-merge-is-necessary-especially-if-it-merges-an-updated-upstream-into-a-topic-branch-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0-git-bash](https://kgw7401.tistory.com/65) 참고  
+git stash
+
+git checkout sinhey
+
+git stash pop
